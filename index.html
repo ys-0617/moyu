@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>墨雨 | 冒险家</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+
+        body {
+            background-color: #f7faf8;
+            color: #2c4a3b;
+            line-height: 1.7;
+        }
+
+        /* 顶部横幅 */
+        .banner {
+            width: 100%;
+            height: 380px;
+            background: url("img/banner.jpg") center/cover no-repeat;
+            position: relative;
+        }
+        .banner-mask {
+            width: 100%;
+            height: 100%;
+            background: rgb(64, 101, 103);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .banner h1 {
+            font-size: 2.8rem;
+            font-weight: 400;
+            letter-spacing: 4px;
+        }
+        .banner p {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* 主体容器 */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        /* 简介区域 */
+        .intro {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        .intro-img img {
+            width: 220px;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(71, 117, 121, 0.2);
+        }
+        .intro-text h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #3a6b54;
+            font-weight: 500;
+        }
+        .intro-text p {
+            font-size: 1rem;
+            margin-bottom: 12px;
+        }
+
+        /* 档案板块 */
+        .info-box {
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 60px;
+        }
+        .info-box h2 {
+            font-size: 1.6rem;
+            color: #3a6b54;
+            margin-bottom: 25px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e2ebe6;
+        }
+        .info-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .info-item {
+            font-size: 1rem;
+        }
+
+        /* 台词板块 */
+        .words {
+            text-align: center;
+        }
+        .words h2 {
+            font-size: 1.6rem;
+            color: #3a6b54;
+            margin-bottom: 30px;
+        }
+        .sentence {
+            font-size: 1.05rem;
+            padding: 16px;
+            margin: 15px 0;
+            background: #edf4f0;
+            border-radius: 6px;
+        }
+
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #668072;
+            font-size: 0.9rem;
+        }
+
+        /* 手机适配 */
+        @media (max-width: 700px) {
+            .intro {
+                flex-direction: column;
+                text-align: center;
+            }
+            .info-list {
+                grid-template-columns: 1fr;
+            }
+            .banner h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部横幅 -->
+    <div class="banner">
+        <div class="banner-mask">
+            <h1 style="font-weight: bold;">墨雨</h1>
+            <p>自由的冒险家 | 醉欢弥新</p>
+        </div>
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="container">
+        <!-- 角色简介 -->
+        <section class="intro">
+            <div class="intro-img">
+        <img src="https://pic1.imgdb.cn/item/6a2bc27ac3d435497c2762c6.png" alt="摸鱼">
+            </div>
+            <div class="intro-text">
+                <h2>人物简介</h2>
+                <p>“乖巧软萌”的洛丽塔少女</p>
+                <p>外表与游历万千位面的资深冒险家难以联系</p>
+                <p>性格嚣张胆大，热衷于恶意戏弄周遭之人</p>
+                <p>向来自由无虑，不断奔赴对新位面的探索</p>
+            </div>
+        </section>
+
+        <!-- 角色档案 -->
+        <section class="info-box">
+            <h2>角色档案</h2>
+            <div class="info-list">
+                <div class="info-item">称号：醉欢弥新</div>
+                <div class="info-item">生日：农历6月17日夏</div>
+                <div class="info-item">所属：未知阵营</div>
+                <div class="info-item">武器：魔法杖</div>
+                <div class="info-item">性格：胜负欲强烈，心胸狭窄之人</div>
+                <div class="info-item">爱好：吃喝玩乐，挑战未知</div>
+            </div>
+        </section>
+
+        <!-- 角色设定 -->
+        <section class="words">
+            <h2>角色设定</h2>
+            <em><div class="sentence">嫉妒、暴怒、懒惰、贪婪、暴食和色欲</div></em>
+            <div class="sentence"><b>印象</b> |  栀子花 春日青 柑橘果香调 欢愉</div>
+            <div class="sentence"><b>食欲</b> |  炸鸡 烧烤 薯片 芒果 黄油拿铁</div>
+            <div class="sentence"><b>践行</b> |  捉弄众生、摆弄命运为消遣行乐</div>
+            <div class="sentence"><b>价值</b> |  自我欢乐至上，万物皆为过客</div>
+        </section>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>联系我们:1773976915@qq.com</p>
+        作者：Wanyou忘忧
+        <P>此网页于2026.6.17制作完毕</P>
+    </footer>
+</body>
+</html>
