@@ -100,7 +100,7 @@
             font-size: 1rem;
         }
 
-        /* 台词板块 */
+        /* 设定 */
         .words {
             text-align: center;
         }
@@ -125,23 +125,21 @@
             font-size: 0.9rem;
         }
 
-  /* 移动端适配 */
-        @media (max-width: 768px) {
-            .nav a {
-                margin: 0 8px;
-                font-size: 10px;
+
+        /* 手机适配 */
+        @media (max-width: 700px) {
+            .intro {
+                flex-direction: column;
+                text-align: center;
             }
-            .title-box h1 {
-                font-size: 30px;
+            .info-list {
+                grid-template-columns: 1fr;
             }
-            .top-banner {
-                height: 40vh;
-            }
-            .img-list img {
-                width: 90%;
-                height: auto;
+            .banner h1 {
+                font-size: 1.5rem;
             }
         }
+    
     </style>
 </head>
 <body>
@@ -158,7 +156,7 @@
         <!-- 角色简介 -->
         <section class="intro">
             <div class="intro-img">
-        <img src="https://pic1.imgdb.cn/item/6a30bd5219e10d2879ae425e.jpg" alt="摸鱼">
+        <img src="https://pic1.imgdb.cn/item/6a30bffbfdc5e0ecc377698c.png" alt="摸鱼">
             </div>
             <div class="intro-text">
                 <h2>人物简介</h2>
